@@ -1,0 +1,96 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 7 key-value pairs.
+Below are 7 of them:
+ 1 key:             persian_cat_01.jpg  label:                persian cat
+ 2 key:          Boston_Terrier_01.jpg  label:             boston terrier
+ 3 key:         german_shepherd_01.jpg  label:            german shepherd
+ 4 key:          Boston_Terrier_02.jpg  label:             boston terrier
+ 5 key:                     cat_01.jpg  label:                        cat
+ 6 key:                   table_01.jpg  label:                      table
+ 7 key:         german_shepherd_02.jpg  label:            german shepherd
+
+     MATCH:
+
+            persian_cat_01.jpg: 
+Real:                persian cat   Classifier:               persian cat, cat
+
+         Boston_Terrier_01.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+        german_shepherd_01.jpg: 
+Real:            german shepherd   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+         Boston_Terrier_02.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat
+
+        german_shepherd_02.jpg: 
+Real:            german shepherd   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+                  table_01.jpg: 
+Real:                      table   Classifier:                           desk
+
+# Total Images 7 # Matches: 6 # NOT Matches: 1
+
+     MATCH:
+
+            persian_cat_01.jpg: 
+Real:                persian cat   Classifier:               persian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+         Boston_Terrier_01.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+        german_shepherd_01.jpg: 
+Real:            german shepherd   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+         Boston_Terrier_02.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:              egyptian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+        german_shepherd_02.jpg: 
+Real:            german shepherd   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                  table_01.jpg: 
+Real:                      table   Classifier:                           desk  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 7 # Matches: 6 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  7  N Dog Images:  4  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  7  N Dog Images:  4  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   7
+N Dog Images        :   4
+N Not-Dog Images    :   3
+Summary statistics(percentage):
+pct_match           : 85.71428571428571%
+pct_correct_dogs    : 100.0%
+pct_correct_breed   : 100.0%
+pct_correct_notdogs : 100.0%
+
+** Total Elapsed Runtime: 0:0:5
